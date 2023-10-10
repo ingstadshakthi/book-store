@@ -1,0 +1,34 @@
+.error-container {
+    max-width: 500px;
+    margin: 5rem auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.error-container h1 {
+    font-size: 4rem;
+    color: orange;
+}
+
+.error-container p {
+    font-size: 1.4rem;
+    margin-top: 10px;
+    color: #333;
+}
+
+@media (max-width: 500px) {
+    .error-container {
+        max-width: 400px;
+    }
+
+    .error-container h1 {
+        font-size: 3rem;
+    }
+
+    .error-container p {
+        font-size: 1.2rem;
+    }
+}

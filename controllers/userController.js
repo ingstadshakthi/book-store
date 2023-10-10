@@ -15,7 +15,6 @@ const createSendToken = (user, statusCode, req, res) => {
     res.cookie('jwt', token, {
         expires: new Date(Date.now() + process.env.JWT_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000),
         httpOnly: true,
-        secure: req.secure || req.headers['x-forwarded-proto'] === 'https'
     });
 
     // Remove password from output
@@ -64,3 +63,9 @@ exports.logout = (req, res) => {
     });
     res.status(200).json({ status: 'success' });
 };
+
+exports.cart = (req, res) => {
+    console.log(req.body, req, user);
+
+    res.status(200).json({ "message": "success" })
+}

@@ -13,27 +13,12 @@ const bookSchema = new mongoose.Schema({
     author: {
         type: String,
         required: true,
-    },
-    originalPrice: {
-        type: Number,
-        required: true
+        trim: true,
     },
     description: {
         type: String,
-        required: true
-    },
-    quantity: {
-        type: Number,
         required: true,
-        default: 100
-    },
-    publisher: {
-        type: String,
-        required: true
-    },
-    language: {
-        type: String,
-        required: true
+        trim: true,
     },
     isbn: {
         type: String,
@@ -43,8 +28,15 @@ const bookSchema = new mongoose.Schema({
     category: {
         type: String,
         required: true,
+        trim: true,
+
+    },
+    image: {
+        type: String,
+        required: true,
+        trim: true,
     }
-});
+}, { versionKey: false });
 
 const Book = mongoose.model('Book', bookSchema);
 

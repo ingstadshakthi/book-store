@@ -2,7 +2,7 @@ const Book = require('./../models/bookModel');
 
 exports.getAllBooks = async (req, res) => {
 
-    const allBooks = await Book.find();
+    const allBooks = await Book.find().select('-__v');
     res.status(200).json({
         status: 'success',
         length: allBooks.length,
@@ -23,7 +23,7 @@ exports.createBook = async (req, res) => {
 
 exports.getBook = async (req, res) => {
     const id = req.params.id;
-    const book = await Book.findById(id);
+    const book = await Book.findById(id).select('-__v');
     res.status(200).json({
         status: 'success',
         data: book

@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* common styles */
+
+:root {
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --primary-color: #face59;
+  --secondary-color: #f8f8f8;
+  --text-dark: #111827;
+  --text-light: #6b7280;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --header-font: "Playfair Display", serif;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 1320px;
+  margin: 0 auto;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1), -3px -3px 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+input,
+button,
+a,
+select,
+textarea {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span,
+i,
+a,
+button,
+input {
+  font-weight: 400;
+  color: var(--text-color)
+}
+
+
+
+
+/* end of common styles */

@@ -1,0 +1,45 @@
+.book-alert {
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    font-size: 4rem;
+}
+
+.search-box {
+    display: flex;
+    height: 4rem;
+    margin: 1rem 3rem;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.search-box select {
+    width: 150px;
+}
+
+.search-box .search-input {
+    width: 250px;
+    padding-left: 1rem;
+}
+
+.product-list {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 3rem 3rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@media(max-width:1060px) {
+    .product-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width:780px) {
+    .product-list {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 2rem 3rem;
+
+    }
+}

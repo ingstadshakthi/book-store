@@ -30,8 +30,7 @@ const userSchema = new mongoose.Schema({
         type: Array,
         default: []
     }
-
-});
+}, { versionKey: false });
 
 userSchema.pre('save', async function (next) {
 
